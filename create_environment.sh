@@ -1,18 +1,17 @@
 #!/bin/bash
 mkdir submission_reminder_app
 mkdir submission_reminder_app/app/
-touch submission_reminder_app/app/reminder.sh
+cp -p .reminder.sh submission_reminder_app/app/reminder.sh
 mkdir submission_reminder_app/modules/
-touch submission_reminder_app/modules/functions.sh
+cp -p .functions.sh submission_reminder_app/modules/functions.sh
 mkdir submission_reminder_app/assets/
-touch submission_reminder_app/assets/submissions.txt
+cp submissions.txt submission_reminder_app/assets/
 mkdir submission_reminder_app/config/
-touch submission_reminder_app/config/config.env
-touch submission_reminder_app/startup.sh
-cp submissions.txt submission_reminder_app/assets/submissions.txt
-echo "erica, shell navigation, submitted">>submission_reminder_app/assets/submissions.txt
-echo "Benigne, shell navigation, not submitted">>submission_reminder_app/assets/submissions.txt
+cp -p .config.env submission_reminder_app/config/config.env
+cp -p .startup.sh submission_reminder_app/startup.sh
+echo "Erica, Shell Navigation, submitted">>submission_reminder_app/assets/submissions.txt
+echo "Benigne, Shell Navigation, not submitted">>submission_reminder_app/assets/submissions.txt
 echo "Emmy, shell navigation, submitted">>submission_reminder_app/assets/submissions.txt
-echo "Keza, shell navigation, not submitted">>submission_reminder_app/assets/submissions.txt
-echo "hanna, shell navigation, not submitted">>submission_reminder_app/assets/submissions.txt
+echo "Keza, shell Navigation, not submitted">>submission_reminder_app/assets/submissions.txt
+echo "Hanna, Shell Navigation, not submitted">>submission_reminder_app/assets/submissions.txt
 
